@@ -1,0 +1,54 @@
+How events work in browser
+How to react to an event ith Jquery
+Var scope
+
+
+How events work in the browser
+
+click
+
+
+
+keyup
+keydown    - key evemts
+keypress
+
+
+mousin
+mousout
+mousover - mouse events
+mousemove
+
+
+touch  - mobile touch events
+
+
+scroll
+
+
+load
+
+
+
+- Events generally bubble up the dom from the spot where they riginate from
+
+- this means that every parent element will be notified that an event ocored and will have the opportunity to respond
+
+- A callback is when you use a function as a parmerter to another function
+
+function aFunction(function) {
+callback
+}
+
+
+function outerFunction() {
+
+}
+
+
+
+
+.preventDefault(); prevents default response of event handler and only runs JS
+.stopPropagation(); prevents response from bubbling up the dom
+
+

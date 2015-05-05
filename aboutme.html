@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>About Me</title>
+  </head>
+  <body>
+    <h1>About Me</h1>
+
+    <ul>
+      <li>Nickname: <span id="nickname">Hiram</span>
+      <li>Favorites:  <span id="favorites">Meta</span>
+      <li>Hometown: <span id="hometown">Tallahassee</span>
+    </ul>
+
+  </body>
+  <script type="text/javascript">
+  var b = document.body;
+  var u = document.getElementsByTagName('ul')[0];
+  b.style.fontFamily = ('Arial');
+   for (i = 0; i < u.children.length; i++) {
+     u.children[i].className = "listItem";
+    console.log("child!");
+   }
+  var img = document.createElement('img');
+  img.src = "http://cdns2.freepik.com/free-photo/saguaro-cactus-clip-art_413357.jpg";
+  document.getElementsByClassName('listItem')[2].appendChild(img);
+
+  </script>
+</html>
